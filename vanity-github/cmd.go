@@ -1,10 +1,10 @@
 package main
 
 import (
-	  "context"
-    "fmt"
-    "os"
-	  "github.com/google/go-github/github"
+	"context"
+	"fmt"
+	"github.com/google/go-github/github"
+	"os"
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 				fmt.Printf("%v\n", *user.Login)
 			}
 			page = resp.NextPage
-			if (page == 0) {
+			if page == 0 {
 				break
 			}
 		}
